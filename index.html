@@ -4,14 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lusia Konversi Suhu</title>
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 <header>
-    <h1>Website Konversi Suhu</h1>
-</header> 
+    <h1 style="font-family: cursive; padding-top: 30px;">Website Konversi Suhu</h1>
+</header>
 
+<!-- Main Content -->
+<main>
+    <h4 class="title-input">Masukkan suhu derajat Celcius (&deg;C)...</h4>
+    <!-- Section Celcius -->
+    <section class="celcius-container">
+        <header>
+            <h4 class="title-input">Celcius (&deg;C):</h4>
+        </header>
+        <section>
+            <textarea id="celcius-input"></textarea>
+            <section>
+                <button class="button green-color" id="convert-btn">Konversi</button>
+                <button class="button red-color" id="reset-btn">Reset</button>
+            </section>
+        </section>
+    </section>
+
+    <section class="result-container">
+        <!-- Section Fahrenheit -->
+        <section>
+            <header>
+                <h4 class="title-input">Fahrenheit (&deg;F):</h4>
+            </header>
+            <section>
+                <textarea id="fahrenheit-output"></textarea>
+                <section>
+                    <button class="button blue-color" id="reverse-btn">Reverse</button>
+                </section>
+            </section>
+        </section>
+
+        <!-- Section Calculation -->
+        <section>
+            <header>
+                <h4 class="title-input">Convertion Calculation:</h4>
+            </header>
+            <section>
+                <textarea id="conversion-result" readonly rows="4" cols="50"></textarea>
+            </section>
+        </section>
+    </section>
+
+    <hr/>
+
+    <!-- Section Formula/Info -->
+    <section>
+        <header>
+            <h3 style="font-family: cursive;">Cara Konversi Dari Celcius (&deg;C)  ke Fahrenheit (&deg;F) dan Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h3>
+        </header>
+        <p>Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F) sama 
+            dengan suhu <span class="subject-info">S</span> dalam derajat Celcius (&deg;C)</p>
+        <p>
+            <span class="subject-info">S</span> <sub> (&deg;F)</sub> = (<span 
+            class="subject-info">S</span><sub>(&deg;C)</sub> x 1.8) + 32
+        </p>
+        <p>
+            <span class="subject-info">S</span> <sub> (&deg;C)</sub> = (<span 
+            class="subject-info">S</span><sub>(&deg;F)</sub> - 32) / 1.8
+        </p>
+    </section>
+</main>
+
+<!-- Link to JS -->
 <script src="js/script.js"></script>
 </body>
 </html>

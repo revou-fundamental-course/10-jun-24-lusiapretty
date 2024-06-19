@@ -1,1 +1,86 @@
-/* Ini CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/images.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    max-width: 840px;
+    margin: auto;
+}
+
+.celcius-container {
+    text-align: center;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20%;
+}
+
+textarea {
+    resize: none;
+    background-color: #f8f8f8;
+    border: 2px solid #2675ec;
+    border-radius: 4px;
+    font-family: math;
+    font-size: 14px;
+    background-color: aquamarine;
+}
+
+textarea#conversion-result {
+    width: 55%;
+    height: 43px; 
+    margin-left: 103px;
+}
+
+.button {
+    height: 32px;
+    border: 0;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+
+.green-color {
+    background-color: rgb(27, 156, 27);
+    color: white;
+}
+
+.red-color {
+    background-color: red;
+    color: white;
+}
+
+.blue-color {
+    background-color: blue;
+    color: white;
+    margin-left: 50px;
+}
+
+.subject-info {
+    font-size: 24px;
+    font-style: italic;
+    font-family: math;
+}
+
+.title-input {
+    font-family: cursive;
+    /* font-style: oblique; */
+}
