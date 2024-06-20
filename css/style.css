@@ -21,18 +21,25 @@ main {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
+    border: 3px solid blue;
     max-width: 840px;
     margin: auto;
 }
 
-.celcius-container {
-    text-align: center;
+.conversion-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.result-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 20%;
+.celcius-container,.fahrenheit-container {
+    text-align: center;
+    width: auto;
+}
+
+.calculation-container {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -41,14 +48,15 @@ textarea {
     border: 2px solid #2675ec;
     border-radius: 4px;
     font-family: math;
-    font-size: 14px;
+    font-size: 16px;
     background-color: aquamarine;
+    width: 100%;
 }
 
 textarea#conversion-result {
-    width: 55%;
-    height: 43px; 
-    margin-left: 103px;
+    width: 35%;
+    height: 43px;
+    margin-left: 0;
 }
 
 .button {
@@ -71,7 +79,7 @@ textarea#conversion-result {
 .blue-color {
     background-color: blue;
     color: white;
-    margin-left: 50px;
+    margin-left: auto;
 }
 
 .subject-info {
@@ -82,5 +90,4 @@ textarea#conversion-result {
 
 .title-input {
     font-family: cursive;
-    /* font-style: oblique; */
 }

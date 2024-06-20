@@ -15,23 +15,24 @@
 <!-- Main Content -->
 <main>
     <h4 class="title-input">Masukkan suhu derajat Celcius (&deg;C)...</h4>
-    <!-- Section Celcius -->
-    <section class="celcius-container">
-        <header>
-            <h4 class="title-input">Celcius (&deg;C):</h4>
-        </header>
-        <section>
-            <textarea id="celcius-input"></textarea>
+    <!-- Container for Celsius and Fahrenheit -->
+    <div class="conversion-container">
+        <!-- Section Celcius -->
+        <section class="celcius-container">
+            <header>
+                <h4 class="title-input">Celcius (&deg;C):</h4>
+            </header>
             <section>
-                <button class="button green-color" id="convert-btn">Konversi</button>
-                <button class="button red-color" id="reset-btn">Reset</button>
+                <textarea id="celcius-input"></textarea>
+                <section>
+                    <button class="button green-color" id="convert-btn">Konversi</button>
+                    <button class="button red-color" id="reset-btn">Reset</button>
+                </section>
             </section>
         </section>
-    </section>
 
-    <section class="result-container">
         <!-- Section Fahrenheit -->
-        <section>
+        <section class="fahrenheit-container">
             <header>
                 <h4 class="title-input">Fahrenheit (&deg;F):</h4>
             </header>
@@ -42,15 +43,15 @@
                 </section>
             </section>
         </section>
+    </div>
 
-        <!-- Section Calculation -->
+    <!-- Section Calculation -->
+    <section class="calculation-container">
+        <header>
+            <h4 class="title-input">Convertion Calculation:</h4>
+        </header>
         <section>
-            <header>
-                <h4 class="title-input">Convertion Calculation:</h4>
-            </header>
-            <section>
-                <textarea id="conversion-result" readonly rows="4" cols="50"></textarea>
-            </section>
+            <textarea id="conversion-result" readonly rows="4" cols="50"></textarea>
         </section>
     </section>
 
